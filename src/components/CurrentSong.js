@@ -1,4 +1,22 @@
 import React from "react";
+import { getLyrics, getSong } from 'genius-lyrics-api';
+
+const options =  {
+	apiKey: process.env.REACT_APP_API_KEY,
+	title: 'Blinding Lights',
+	artist: 'The Weeknd',
+	optimizeQuery: true
+};
+
+getLyrics(options).then((lyrics) => console.log(lyrics));
+
+getSong(options).then((song) =>
+	console.log(`
+	${song.id}
+	${song.url}
+	${song.albumArt}
+	${song.lyrics}`)
+);
 const CurrentSong = props => {
   return (
     <div className="App">
@@ -15,6 +33,7 @@ const CurrentSong = props => {
           <div className="now-playing__artist">
               <div className = "subtitle is-3">
             {props.item.artists[0].name}
+
             </div>
 
           </div>

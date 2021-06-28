@@ -20,7 +20,7 @@ class App extends Component {
             no_data: false,
         };
 
-        this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
+        this.getCurrentSong = this.getCurrentSong.bind(this);
         this.tick = this.tick.bind(this);
     }
 
@@ -31,7 +31,7 @@ class App extends Component {
             this.setState({
                 token: _token
             });
-            this.getCurrentlyPlaying(_token);
+            this.getCurrentSong(_token);
         }
         this.interval = setInterval(() => this.tick(), 5000);
     }
@@ -42,12 +42,14 @@ class App extends Component {
 
     tick() {
         if (this.state.token) {
-            this.getCurrentlyPlaying(this.state.token);
+            this.getCurrentSong(this.state.token);
         }
     }
 
 
-    getCurrentlyPlaying(token) {
+    getCurrentSong(token) {
+        // Uses Spotify API to determine current song playing
+
         $.ajax({
             url: "https://api.spotify.com/v1/me/player",
             type: "GET",
