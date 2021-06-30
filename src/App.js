@@ -3,6 +3,7 @@ import * as $ from "jquery";
 import {authEndpoint, clientId, redirectUri, scopes} from "./config";
 import hash from "./hash";
 import CurrentSong from "./components/CurrentSong";
+import './App.css';
 
 class App extends Component {
     constructor(props) {
@@ -75,18 +76,21 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
+            <div className = "App">
+                <header className = "App-header">
+
                     {!this.state.token && (
                         <a
-                            className="btn btn--loginApp-link"
+                            className="startbtn"
                             href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
                                 "%20"
                             )}&response_type=token&show_dialog=true`}
                         >
-                            First, Log In to Spotify
+                            Login to Spotify
                         </a>
+
                     )}
+
 
                     {this.state.token && !this.state.no_data && (
                         <CurrentSong
@@ -100,7 +104,7 @@ class App extends Component {
                             Nothing currently playing
                         </p>
                     )}
-                </header>
+                    </header>
             </div>
         );
     }
