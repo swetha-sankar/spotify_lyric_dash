@@ -1,40 +1,38 @@
+/**
+ * Swetha Sankar
+ * Component to display current song playing
+ */
 import React from "react";
-import { getLyrics, getSong } from 'genius-lyrics-api';
+import {getLyrics} from 'genius-lyrics-api';
+const API_KEY = process.env.REACT_APP_API_KEY;
 
-const options =  {
-	apiKey: process.env.REACT_APP_API_KEY,
-	title: 'Blinding Lights',
-	artist: 'The Weeknd',
-	optimizeQuery: true
-};
-
-getLyrics(options).then((lyrics) => console.log(lyrics));
-
-getSong(options).then((song) =>
-	console.log(`
-	${song.id}
-	${song.url}
-	${song.albumArt}
-	${song.lyrics}`)
-);
 const CurrentSong = props => {
-  return (
-    <div className="App">
-      <div className="main-wrapper">
-        <div className="now-playing__img">
-          <img   width={500} height={500} src={props.item.album.images[0].url} />
-        </div>
-        <div className="now-playing__side">
+    // Making API request to genius lyrics
+    const options =  {
+        apiKey: API_KEY,
+        title: props.item.name,
+        artist: props.item.artists[0]['name'],
+        optimizeQuery: true
+    };
+    // Using genius lyrics library to simplify request (https://github.com/farshed/genius-lyrics-api)
+    getLyrics(options).then((lyrics) => console.log(lyrics));
+
+    return (
+        <div className="App">
+            <div className="main-wrapper">
+                <div className="now-playing__img">
+                    <img width={500} height={500} src={props.item.album.images[0].url} alt = {props.item.name}/>
+                </div>
+                <div className="now-playing__side">
           <div className="now-playing__name">
               <div className = "title is-3">
-              {props.item.name}
+                    {props.item.name}
               </div>
           </div>
           <div className="now-playing__artist">
               <div className = "subtitle is-3">
-            {props.item.artists[0].name}
-
-            </div>
+                {props.item.artists[0].name}
+              </div>
 
           </div>
         </div>

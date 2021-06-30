@@ -1,4 +1,4 @@
-import React, {Component, useEffect, useState} from 'react';
+import React, {Component} from 'react';
 import * as $ from "jquery";
 import {authEndpoint, clientId, redirectUri, scopes} from "./config";
 import hash from "./hash";
@@ -33,7 +33,7 @@ class App extends Component {
             });
             this.getCurrentSong(_token);
         }
-        this.interval = setInterval(() => this.tick(), 5000);
+        this.interval = setInterval(() => this.tick(), 10000);
     }
 
     componentWillUnmount() {
