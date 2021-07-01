@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed0f3c9a-08ab-40f7-8edb-6d630041f34b" name="Default Changelist" comment="stylistically challenged...">
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+    <list default="true" id="ed0f3c9a-08ab-40f7-8edb-6d630041f34b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/playing.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CurrentSong.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentSong.js" afterDir="false" />
     </list>
@@ -50,8 +48,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sanka\OneDrive\Documents\spotify_dash\src\components" />
       <recent name="C:\Users\sanka\OneDrive\Documents\spotify_dash\public" />
+      <recent name="C:\Users\sanka\OneDrive\Documents\spotify_dash\src\components" />
       <recent name="C:\Users\sanka\OneDrive\Documents\spotify_dash\favicon.ico" />
     </key>
   </component>
@@ -81,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624890265666</updated>
       <workItem from="1624890267535" duration="18438000" />
-      <workItem from="1624927328455" duration="17402000" />
+      <workItem from="1624927328455" duration="23757000" />
     </task>
     <task id="LOCAL-00001" summary="set up basic functionality, working on getting lyrics to appear properly">
       <created>1624899692250</created>
@@ -111,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625025106987</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="style: change intro screen, working on player screen">
+      <created>1625092744993</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625092744993</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,17 +130,18 @@
     <MESSAGE value="changes to style, lyric functionality" />
     <MESSAGE value="change to genius lyrics api" />
     <MESSAGE value="minor changes to genius api implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes to genius api implementation" />
+    <MESSAGE value="style: change intro screen, working on player screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: change intro screen, working on player screen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625078019669">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1625078019669" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1625078777034">
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1625092744468">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1625078777034" />
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1625092744468" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1624899930449">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -144,26 +150,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="639" y="306" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1624899722638" />
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1625078191901">
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1625100110393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625078191901" />
-    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1625078191901">
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625100110393" />
+    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1625100110393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625078191901" />
-    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1625078191901">
+    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625100110393" />
+    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1625100110393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625078191901" />
-    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1625078191901">
+    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625100110393" />
+    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1625100110393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625078191901" />
-    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1625025110882">
+    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625100110393" />
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1625092746811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1625025110882" />
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1625092746811" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624899939149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

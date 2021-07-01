@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import * as $ from "jquery";
 import {authEndpoint, clientId, redirectUri, scopes} from "./config";
 import hash from "./hash";
+import * as $ from "jquery";
 import CurrentSong from "./components/CurrentSong";
 import './App.css';
 
@@ -51,6 +51,7 @@ class App extends Component {
     getCurrentSong(token) {
         // Uses Spotify API to determine current song playing
 
+
         $.ajax({
             url: "https://api.spotify.com/v1/me/player",
             type: "GET",
@@ -78,7 +79,6 @@ class App extends Component {
         return (
             <div className = "App">
                 <header className = "App-header">
-
                     {!this.state.token && (
                         <a
                             className="startbtn"
@@ -90,8 +90,6 @@ class App extends Component {
                         </a>
 
                     )}
-
-
                     {this.state.token && !this.state.no_data && (
                         <CurrentSong
                             item={this.state.item}
@@ -100,11 +98,12 @@ class App extends Component {
                         ) }
 
                     {this.state.no_data && (
-                        <p>
+                        <p className = 'headtext'>
                             Nothing currently playing
                         </p>
                     )}
                     </header>
+
             </div>
         );
     }

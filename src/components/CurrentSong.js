@@ -21,22 +21,34 @@ const CurrentSong = props => {
     // Store the promise in the data
     getLyrics(options).then((lyrics) => setLyrics(lyrics));
 
+    // Format the music page (use Bulma tile to put everything from left to right)
     return (
         <div>
-            <div>
-                <img width={500} height={500} src={props.item.album.images[0].url} alt={props.item.name}/>
+            <div className='tile'>
+                <div className='tile is-parent is-vertical'>
+                    <div className='image is-size-5'>
+                        <img src={props.item.album.images[0].url} alt={props.item.name}/>
+                    </div>
+                        <div className='headtext'>
+                            <div className = 'subheader'>
+                                {props.is_playing ? "Now Playing: " : "Paused: "}
+                            </div>
+                            {props.item.name}
+                            <br/>
+                            <div className='subheader'>
+                                {props.item.artists[0].name}
+                            </div>
+                        </div>
+
+                </div>
                 <div>
-                    {props.item.name}
                 </div>
-                <div className = "is-justify-content-right">
-                    {props.item.artists[0].name}
-                </div>
-            </div>
-            <div className = "columns is-vertical">
-            <pre>
+                <div className = 'tile is-child'>
+                <pre className='lyricstyle'>
             {lyrics}
             </pre>
-                </div>
+                    </div>
+            </div>
         </div>
     );
 }
