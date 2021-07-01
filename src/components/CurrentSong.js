@@ -2,7 +2,7 @@
  * Swetha Sankar
  * Displays current song, album art, artist, and lyrics
  */
-// import react hooks useState
+// React hooks
 import React, {useState} from "react";
 import {getLyrics} from 'genius-lyrics-api';
 
@@ -29,28 +29,28 @@ const CurrentSong = props => {
                     <div className='image is-size-5'>
                         <img src={props.item.album.images[0].url} alt={props.item.name}/>
                     </div>
-                        <div className='headtext'>
-                            <div className = 'subheader'>
-                                {props.is_playing ? "Now Playing: " : "Paused: "}
-                            </div>
-                            {props.item.name}
-                            <br/>
-                            <div className='subheader'>
-                                {props.item.artists[0].name}
-                            </div>
+                    <div className='titlestyle'>
+                        <div className='subheader'>
+                            {props.is_playing ? "Now Playing: " : "Paused: "}
                         </div>
+                        {props.item.name}
+                        <br/>
+                        <div className='subheader'>
+                            {props.item.artists[0].name}
+                        </div>
+                    </div>
 
                 </div>
                 <div>
                 </div>
-                <div className = 'tile is-child'>
+                <div className='tile is-child'>
                 <pre className='lyricstyle'>
             {lyrics}
             </pre>
-                    </div>
+                </div>
             </div>
         </div>
     );
-}
+};
 
 export default CurrentSong;

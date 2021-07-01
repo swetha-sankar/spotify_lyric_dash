@@ -50,8 +50,6 @@ class App extends Component {
 
     getCurrentSong(token) {
         // Uses Spotify API to determine current song playing
-
-
         $.ajax({
             url: "https://api.spotify.com/v1/me/player",
             type: "GET",
@@ -98,7 +96,7 @@ class App extends Component {
                         ) }
 
                     {this.state.no_data && (
-                        <p className = 'headtext'>
+                        <p className = 'titlestyle'>
                             Nothing currently playing
                         </p>
                     )}
