@@ -7,7 +7,9 @@ Connects with a user's Spotify account to display currently playing track and co
 
 ## Note: 
 If the lyrics aren't displaying (CORS), please follow the instructions on this [page][https://stackoverflow.com/questions/14195530/how-to-display-raw-json-data-on-a-html-page] and reopen the above link
-For Windows + Chrome users, please use Windows Key + R and enter chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security to see the lyrics
+
+
+For Windows + Chrome users, please use Windows Key + R and enter chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security and then open the website link
 
 ## Resources
 - Bootstrapped with Create React App
